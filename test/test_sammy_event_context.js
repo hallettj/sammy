@@ -22,7 +22,7 @@
         equals(this.context.path, '#/test/:test');
       })
       .should('set params', function() {
-        isObj(this.context.params, new Sammy.Object({test: 'hooray'}));
+        isObj(this.context.params, {test: 'hooray'});
       });
       
 
